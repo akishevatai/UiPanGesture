@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UiPanGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file Image View" translatesAutoresizingMaskIntoConstraints="NO" id="FNb-Z2-8tA">
+                                <rect key="frame" x="46" y="80" width="120" height="130"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash image view" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-0q-ZA8">
+                                <rect key="frame" x="264" y="692" width="120" height="130"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z3z-0q-ZA8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="648" id="1kh-Lf-5hG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z3z-0q-ZA8" secondAttribute="trailing" constant="30" id="2ey-mf-apL"/>
+                            <constraint firstItem="Z3z-0q-ZA8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="264" id="7Ve-hd-ysf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FNb-Z2-8tA" secondAttribute="trailing" constant="248" id="GFf-x6-Bka"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FNb-Z2-8tA" secondAttribute="bottom" constant="652" id="XxI-42-aM1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z3z-0q-ZA8" secondAttribute="bottom" constant="40" id="XxX-gA-W6v"/>
+                            <constraint firstItem="FNb-Z2-8tA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="fK9-oP-fg3"/>
+                            <constraint firstItem="FNb-Z2-8tA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="s6T-0b-hBB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fileImageView" destination="FNb-Z2-8tA" id="zff-1K-6lG"/>
+                        <outlet property="trashImageView" destination="Z3z-0q-ZA8" id="NqT-3f-AEF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="file Image View" width="512" height="512"/>
+        <image name="trash image view" width="512" height="375"/>
+    </resources>
+</document>
